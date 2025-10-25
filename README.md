@@ -5,9 +5,7 @@ This project was developed as part of the **Appsian Logical Assignment**.
 
 ---
 
-## 🌐 Live Deployment
-
-*Bonus Section - **
+## **Bonus Section - **
 
 👉 **[View Live App deployed on VERCEL](https://project-manager-appsian-frontend.vercel.app/)** 
 
