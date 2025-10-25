@@ -7,9 +7,11 @@ This project was developed as part of the **Appsian Logical Assignment**.
 
 ## 🌐 Live Deployment
 
-Deployed on **Vercel**
+*Bonus Section - **
 
-👉 **[View Live App](https://project-manager-appsian-frontend.vercel.app/)**
+👉 **[View Live App deployed on VERCEL](https://project-manager-appsian-frontend.vercel.app/)** 
+
+Implemented frontend for  **SMART SCHEDULE API** by taking dependencies of each task and schedule them based on topological sort in Graph data structure algorithms.
 
 ---
 
