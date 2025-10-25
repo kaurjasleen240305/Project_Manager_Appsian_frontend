@@ -12,6 +12,7 @@ import { apiClient } from '@/lib/api';
 import { API_ENDPOINTS } from '@/config/api';
 import { toast } from '@/hooks/use-toast';
 import { z } from 'zod';
+import TaskScheduler from '@/components/TaskScheduler';
 
 const taskSchema = z.object({
   title: z.string().min(1, 'Title is required').max(200, 'Title must be less than 200 characters'),
@@ -262,21 +263,27 @@ const ProjectDetails = () => {
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold mb-6">Tasks</h2>
+        <div className="space-y-8">
+          {/* Task Scheduler Section */}
+          <TaskScheduler projectId={project.id} tasks={tasks} />
+          
+          {/* Tasks Section */}
+          <div>
+            <h2 className="text-2xl font-bold mb-6">Tasks</h2>
 
-        {tasks.length === 0 ? (
-          <Card className="shadow-card">
-            <CardContent className="flex flex-col items-center justify-center py-20">
-              <Circle className="w-16 h-16 text-muted-foreground mb-4" />
-              <h3 className="text-xl font-semibold mb-2">No tasks yet</h3>
-              <p className="text-muted-foreground mb-6 text-center max-w-md">
-                Create your first task to start tracking your work
-              </p>
-              <Button onClick={() => setIsDialogOpen(true)}>
-                <Plus className="w-4 h-4 mr-2" />
-                Create Your First Task
-              </Button>
-            </CardContent>
+            {tasks.length === 0 ? (
+              <Card className="shadow-card">
+                <CardContent className="flex flex-col items-center justify-center py-20">
+                  <Circle className="w-16 h-16 text-muted-foreground mb-4" />
+                  <h3 className="text-xl font-semibold mb-2">No tasks yet</h3>
+                  <p className="text-muted-foreground mb-6 text-center max-w-md">
+                    Create your first task to start tracking your work
+                  </p>
+                  <Button onClick={() => setIsDialogOpen(true)}>
+                    <Plus className="w-4 h-4 mr-2" />
+                    Create Your First Task
+                  </Button>
+                </CardContent>
           </Card>
         ) : (
           <div className="space-y-3">
@@ -319,6 +326,8 @@ const ProjectDetails = () => {
             ))}
           </div>
         )}
+          </div>
+        </div>
       </main>
     </div>
   );

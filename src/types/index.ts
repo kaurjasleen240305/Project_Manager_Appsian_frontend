@@ -1,5 +1,3 @@
-
-
 export interface AuthResponse {
   token: string;
   username: string;
@@ -46,4 +44,30 @@ export interface UpdateTaskDto {
   title?: string;
   dueDate?: string;
   isCompleted?: boolean;
+}
+
+// Scheduler types for MiniProjectManager
+export interface ScheduleTaskDto {
+  title: string;
+  estimatedHours: number;
+  dueDate?: string;
+  dependencies: string[];
+}
+
+export interface ScheduleRequest {
+  tasks: ScheduleTaskDto[];
+}
+
+export interface ScheduledTask {
+  title: string;
+  startDate: string;
+  endDate: string;
+  estimatedHours: number;
+}
+
+export interface ScheduleResponse {
+  recommendedOrder: string[];
+  scheduledTasks: ScheduledTask[];
+  isSchedulable: boolean;
+  warnings: string[];
 }
