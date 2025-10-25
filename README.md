@@ -13,6 +13,18 @@ Implemented frontend for  **SMART SCHEDULE API** by taking dependencies of each 
 
 ---
 
+### 📸 Screenshots
+
+![Authentication Page](./assets/auth.png)
+![Dashboard](./assets/add_proj.png)
+![Project Details Page](./assets/add_task.png)
+![Schedule Tasks](./assets/schedule.png)
+![Add dependencies of one task upon other](./assets/add_dep.png)
+![Order of Tasks scheduled](./assets/scheduled.png)
+![Task Scheduler](./assets/Task_scheduler.png)
+
+---
+
 ## 💻 Work Locally with Your Preferred IDE
 
 If you want to work locally using your own development environment, clone this repository and make your changes freely.
