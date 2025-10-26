@@ -1,6 +1,6 @@
 # 🚀 Welcome to **Appsian Project Manager**
 
-A modern and minimal **Project Management Dashboard** built using **React, TypeScript, Tailwind CSS**, designed for smooth project tracking and productivity.  
+A modern and minimal **Project Management Dashboard** built using **React, TypeScript, Tailwind CSS,Shadcn UI**, designed for smooth project tracking and productivity.  
 This project was developed as part of the **Appsian Logical Assignment**.
 
 ---
