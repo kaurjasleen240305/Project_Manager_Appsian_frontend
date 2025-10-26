@@ -9,7 +9,7 @@ This project was developed as part of the **Appsian Logical Assignment**.
 
 👉 **[View Live App deployed on VERCEL](https://project-manager-appsian-frontend.vercel.app/)** 
 
-Implemented frontend for  **SMART SCHEDULE API** by taking dependencies of each task and schedule them based on topological sort in Graph data structure algorithms.
+Implemented frontend for Appsian Project Manager which manages projects of logged in user ,users can add tasks,delete them,update them and can schedule the tasks using **TASK SCHEDULER** by taking dependencies of each task and schedule them based on topological sort in Graph data structure algorithms.
 
 ---
 
